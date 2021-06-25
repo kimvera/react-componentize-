@@ -8,12 +8,13 @@ import "sweetalert2/dist/sweetalert2.min.css";
 import { ToastContainer } from "react-toastify";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(
-  <React.Fragment>
+  <BrowserRouter>
     <App></App>
     <ToastContainer />
-  </React.Fragment>,
+  </BrowserRouter>,
   document.getElementById("root")
 );
 

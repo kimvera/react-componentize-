@@ -56,3 +56,52 @@ button.link-button {
     transform: rotate(360deg);
   }
 }
+
+/* PAGINATION STYLING */
+.pagination > li {
+  display: inline-block;
+  padding-left: 0;
+}
+.pagination > li {
+  list-style: none;
+  /* border: 0.9px solid; */
+  margin-top: 30px;
+}
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #007bff !important;
+  border: 1px solid #007bff;
+  margin-left: -1px;
+}
+
+.pagination > li.active > a {
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  color: #fff !important;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.pagination > li > a:hover {
+  background-color: #007bff;
+  color: #fff !important;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  color: #007bff !important;
+  margin-left: 0;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 6px 12px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  color: #007bff !important;
+  border-bottom-right-radius: 5px;
+  margin-right: 0;
+  border-top-right-radius: 5px;
+  padding: 6px 12px;
+}
